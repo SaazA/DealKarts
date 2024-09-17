@@ -6,7 +6,6 @@ import OrderScreen from '../screens/OrdersScreen';
 import {View, Text, StyleSheet} from 'react-native';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import AntDesign from 'react-native-vector-icons/AntDesign';
 import FontAwesome6 from 'react-native-vector-icons/FontAwesome6';
 import AppStack from './AppStack';
 import colors from '../constants/colors';
@@ -84,7 +83,6 @@ const BottomTabNavigator = () => {
         component={CartScreen}
         options={{
           headerShown: false,
-
           tabBarIcon: ({color, size}) => (
             <FontAwesome6
               name="cart-shopping"
@@ -96,7 +94,6 @@ const BottomTabNavigator = () => {
           tabBarLabel: 'Cart',
         }}
       />
-
       <Tab.Screen
         name="OrderScreen"
         component={OrderScreen}
@@ -110,7 +107,6 @@ const BottomTabNavigator = () => {
               style={{marginTop: 4}} // Add margin to icon
             />
           ),
-
           tabBarLabel: 'Orders',
         }}
       />
